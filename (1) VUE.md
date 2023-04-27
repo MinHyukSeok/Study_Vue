@@ -18,6 +18,43 @@
     2. 서버는 화면을 그리기 위해 필요한 데이터를 JSON 방식으로 전달
     3. JSON 데이터를 JavaScript로 처리, DOM 트리에 반영(렌더링)
 
-## CSR, SSR
-- CSR과 SSR은 흑과 백이 아님
-  - 내 서비스에 적합한 렌더링 방식을 적절하게 활용할 수 있어야 함
+# timer.html
+```html
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div id="app">
+        {{startTimer()}}
+        <p>시간이 흐른다 : {{ time }}</p>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script>
+        const app = new Vue({
+            el:'#app',
+            data: {
+                time: 0,
+            },
+            methods: {
+                startTimer(){
+                    setTimeout(() => {
+                       this.time++; 
+                    }, 1000);
+                }
+            },
+        })
+    </script>
+
+</body>
+
+</html>
+```
