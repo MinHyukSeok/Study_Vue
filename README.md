@@ -11,12 +11,3 @@
 3. **Vue 컴포넌트 & CLI** - Vue CLI를 사용하여 Vue 컴포넌트를 이해하고 구현.
 4. **Vue 상속** - Vue가 상속을 어떻게 처리하는지 탐구.
 5. **Vuex** - Vuex를 사용하여 Vue.js에서의 상태 관리 학습.
-
-## 시작하기
-
-1. 저장소를 복제
-```
-git clone https://github.com/MinHyukSeok/Study_Vue.git
-```
-
-2. 탐색하고자 하는 주제의 특정 디렉토리로 이동.
